@@ -1,0 +1,1 @@
+I created this project which does check if the number entered is higher or lower than the number which computer is expecting.
