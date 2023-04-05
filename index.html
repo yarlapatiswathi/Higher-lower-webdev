@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <title>Guessing Game</title>
+    </head>
+    <body style="background-image: url('img/bg.jpg');background-size:100% 100%;" class="text-white overflow-hidden"><br>
+        <div class="container ">
+            <div class="d-flex align-items-center justify-content-center vh-100">
+                <div class="d-flex flex-column">
+                        <img class="mx-auto mr-2 d-block rounded " src="img/logo1.jpg" width="68" height="68"/></br>
+                    <form id="guess_form" class="col-12" onsubmit="return false">
+                        <div class="form-group">
+                            <h3>Number Guessing Game</h3>
+                            <strong><p> <span id="limit"> </span> </p></strong>
+                        </div>
+                        <div class="form-group">
+                            <label for="usr_guess mb-4">Enter your guess: </label>
+                            <!--<input type="number" min="1" max="set_limit" class="form-control mb-4" placeholder="Enter a number" id="usr_guess">-->
+                            <input type="text" min="1" max="set_limit" class="form-control mb-4" placeholder="Enter a number" id="usr_guess">
+                        </div>
+                        <button type="submit" class="btn btn-primary px-4 mr-3" id="myBtn" onclick="compare_usr_guess()"> Submit </button>
+                        <button type="submit" class="btn btn-primary px-4 ml-2" onclick="reset1()"> Restart </button>
+                        </br></br>
+                        <strong><p id="message"></p></strong>
+                        <strong><p id="message1"></p></strong>
+                    </form>
+                </div>
+            </div>
+            </div>
+        <script src="script/hilow.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
